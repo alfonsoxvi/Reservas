@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--
+Template Name: FlatLiner
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+
+<head>
+  <title>Trabajo.uy | Iniciar sesion</title>
+  	<link rel="icon" type="image/x-icon" href="../images/logo-redondo.png">
+	<meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+</head>
+
+<body id="top">
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="clear">
+      <div id="logo" class="fl_left">
+        <img class="imgl pad5 borderedbox" src="../images/logo-redondo.png" alt="" id="logo123">
+        <h1 id="elh1"><a href="../index.html">Trabajo.uy</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="../index.html">Inicio</a></li>
+          <li><a class="drop" href="#">Alta</a>
+            <ul>
+              <li><a href="login.html">Usuario</a></li> <!-- #INGRESAR -->
+              <li><a href="log.html">Oferta Laboral</a></li>
+              
+            </ul>
+          </li>
+          <li><a class="drop" href="#">Consulta</a>
+            <ul>
+              <li><a href="listarUsuariosV.html">Usuarios</a></li>
+              <li><a href="consultaOferta.html">Oferta Laboral</a></li>
+              <li><a href="log.html">Postulacion</a></li>
+              <li><a href="consultaTipoPublicacion.html">Tipo Publicacion</a></li>
+            </ul>
+          </li>
+          <li><a href="../index.html#footer">Contacto</a></li>
+          <li><a href="log.html">Iniciar sesion</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row2">
+    <div id="breadcrumb">
+      <!-- ################################################################################################ -->
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Iniciar sesion</a></li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="form">
+
+    <ul class="tab-group">
+      <li class="tab active"><a href="#signup">Registrarse</a></li>
+      <li class="tab"><a href="log.html">Ingresar</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+      <div id="signup">
+        <h1 id="lol2">Registrate gratis</h1>
+        <p id="lol2">Es necesario iniciar sesion para acceder a la seccion de encomiendas, pero no se utilizara para
+          otro tipo de actividad ajena a la mencionada</p>
+
+        <form >
+
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Nickname (sin utilizar espacios)<span class="req">*</span>
+              </label>
+            </div>
+            <input id="lol" type="text" name="nickname" required autocomplete="off" />
+
+            <div class="field-wrap">
+              <label>
+                Contraseña<span class="req">*</span>
+              </label>
+            </div>
+            <input id="password" type="password" name="contrasena" required autocomplete="off" />          
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Confirmar contraseña<span class="req">*</span>
+            </label>
+          </div>
+          <input id="confirmPassword" type="password" name="confirmarContrasena" required autocomplete="off" />
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Nombre<span class="req">*</span>
+              </label>
+            </div>
+            <input id="lol" type="text" name="nombre" required autocomplete="off" />
+
+            <div class="field-wrap">
+              <label>
+                Apellido<span class="req">*</span>
+              </label>
+            </div>
+            <input id="lol" type="text" name="apellido" required autocomplete="off" /> <br>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Foto de perfil<span class="req">*</span>
+            </label>
+          </div>
+          <input type="file" id="imagenCargaPerfil" name="imagen" accept="image/*" required><br>
+          
+          <div class="field-wrap">
+            <label>
+              Email<span class="req">*</span>
+            </label>
+          </div>
+          <input id="lol" type="email" name="email" required autocomplete="off" /><br><br>
+
+          <div class="field-wrap">
+            <select id="user-type" name="user-type" required>
+              <option value=" ">Seleccionar</option>
+              <option value="postulante">Postulante</option>
+              <option value="empresa">Empresa</option>
+            </select>
+          </div>
+          
+          <div class="field-wrap" id="nacionalidad-field" style="display: none;">
+            <div>
+            <label>
+              Nacionalidad<span class="req">*</span>
+            </label><br><br>
+          </div>
+            <input id="nacionalidad" type="text" name="nacionalidad" autocomplete="off" />
+          </div>
+          
+          <div class="field-wrap" id="fecha-nacimiento-field" style="display: none;">
+          <div>
+            <label>
+              Fecha de nacimiento<span class="req">*</span>
+            </label><br><br>
+            </div>
+            <input id="fecha-nacimiento" type="date" name="fecha-nacimiento" autocomplete="off" />
+          </div>
+          
+          <div class="field-wrap" id="nombreE-field" style="display: none;">
+          <div>
+            <label>
+              Nombre de Empresa<span class="req">*</span>
+            </label><br><br>
+          </div>
+            <input id="nombreE" type="text" name="nombreE" autocomplete="off" />
+          </div>
+          
+          <div class="field-wrap" id="descriEmpresa-field" style="display: none;">
+            <div>
+              <label>
+                Descripcion de la Empresa<span class="req">*</span>
+              </label><br><br>
+            </div>
+              <input id="descriEmpresa" type="text" name="descriEmpresa" autocomplete="off" />
+            </div>
+
+          <div class="field-wrap" id="linkweb-field" style="display: none;">
+          <div>
+            <label>
+              Link de la web<span class="req">*</span>
+            </label><br><br>
+          </div>
+            <input id="linkweb" type="text" name="linkweb" autocomplete="off" />
+          </div>
+
+          
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const userTypeSelect = document.getElementById("user-type");
+              const nacionalidadField = document.getElementById("nacionalidad-field");
+              const fechaNacimientoField = document.getElementById("fecha-nacimiento-field");
+              const nombreEField = document.getElementById("nombreE-field");
+              const descriEmpresaField = document.getElementById("descriEmpresa-field");
+              const linkwebField = document.getElementById("linkweb-field");
+          
+              userTypeSelect.addEventListener("change", function () {
+                if (userTypeSelect.value === "postulante") {
+                  nacionalidadField.style.display = "block";
+                  fechaNacimientoField.style.display = "block";
+                  nombreEField.style.display = "none";
+                  linkwebField.style.display = "none";
+                  descriEmpresaField.style.display = "none";
+                } else if (userTypeSelect.value === "empresa") {
+                  nacionalidadField.style.display = "none";
+                  fechaNacimientoField.style.display = "none";
+                  nombreEField.style.display = "block";
+                  linkwebField.style.display = "block";
+                  descriEmpresaField.style.display = "block";
+                } else {
+                  nacionalidadField.style.display = "none";
+                  fechaNacimientoField.style.display = "none";
+                  nombreEField.style.display = "none";
+                  linkwebField.style.display = "none";
+                  descriEmpresaField.style.display = "none";
+                }
+              });
+            });
+          </script>
+          
+          
+
+          <div id="password-error" style="color: red;">
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const passwordInput = document.getElementById("password");
+              const confirmPasswordInput = document.getElementById("confirmPassword");
+              const passwordError = document.getElementById("password-error");
+              const submitButton = document.querySelector("button[name='enviardatos']");
+          
+              function validatePassword() {
+                const password = passwordInput.value;
+                const confirmPassword = confirmPasswordInput.value;
+          
+                if (password !== confirmPassword) {
+                  passwordError.textContent = "Las contraseñas no coinciden";
+                  submitButton.disabled = true;
+                } else {
+                  passwordError.textContent = "";
+                  submitButton.disabled = false;
+                }
+              }
+          
+              passwordInput.addEventListener("input", validatePassword);
+              confirmPasswordInput.addEventListener("input", validatePassword);
+            });
+          </script>
+          
+
+          <button type="submit" name="enviardatos" class="button button-block" />Enviar datos</button>
+
+        </form>
+
+      </div>
+
+
+
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->  
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+
+
+
+
+      <div id="login">
+       </div>
+
+    </div><!-- tab-content -->
+
+  </div> <!-- /form -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row4">
+    <footer id="footer" class="clear">
+      <div class="one_half first">
+        <h6 class="title">Sobre nosotros</h6>
+        <img class="imgl pad5 borderedbox" src="../images/images.png" alt="">
+        <p>Somos una empresa dedicada al crecimiento de las empresas. A traves de nuestra plataforma ofrecemos
+          los mejores servicios para nuestros clientes</p>
+        <p>Al contar con nosotros cuenta con una empresa con una gran trayectoria y calidad. Nuestros valores
+          son simples y universales; el cliente por sobre todo. Esto es posible gracias a nuestra pagina web,
+          atraves de la cual usted puede dar de alta y postularse a ofertas laborales y con un servicio
+          personalizado.</p>
+      </div>
+      <div class="one_quarter">
+        <h6 class="title">TProg G46</h6>
+        <address class="push30">
+          Trabajo.Uy<br>
+          Av. Real No fake, esq totalmente veridica<br>
+          Montevideo<br>
+          11600
+        </address>
+        <ul class="nospace">
+          <li class="push10"><i class="icon-time"></i> Lunes - Viernes 9:00am - 9:00pm</li>
+          <li class="push10"><i class="icon-phone"></i> 099123456</li>
+          <li><i class="icon-envelope-alt"></i> mailcontacto@trabajouy.com</li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="title">Contacto</h6>
+        <p>En caso de tener alguna duda / problema puede realizar una consulta, con gusto le atenderemos a la
+          brevedad.</p>
+        <form>
+          <input class="push15" type="text" name="nombreconsulta" id="nlt_email" value="" placeholder="Nombre"
+            size="22">
+          <input class="push15" type="text" name="telefonoconsulta" id="nlt_email" value="" placeholder="Telefono"
+            size="22">
+          <input class="push15" type="text" name="emailconsulta" id="nlt_email" placeholder="Email" value="" size="22">
+          <input class="push15" type="text" name="asuntoconsulta" id="nlt_email" placeholder="Asunto" value=""
+            size="22">
+          <textarea name="consulta" id="comment" cols="25" rows="10" placeholder="Consulta"></textarea><br>
+          <input class="badge bold uppercase" type="submit" name="consultaboton" value="Enviar consulta >">
+        </form>
+      </div>
+    </footer>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="clear">
+      <!-- ################################################################################################ -->
+      <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Trabajo.uy</a></p>
+      <p class="fl_right">TProg G46<a target="_blank" href="http://www.os-templates.com/"
+          title="Free Website Templates"></a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,789 @@
+@charset "utf-8";
+/*
+Template Name: FlatLiner
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("fontawesome-3.2.1.min.css");
+@import url("framework.css");
+@import url("login.css");
+
+/* Rows
+---------------------------------------------------------------------------------------------------------------*/
+.row1 {
+  border-top: 5px solid;
+}
+
+.row2,
+.row2 a {
+}
+
+.row3,
+.row3 a {
+}
+
+.row4 {
+  border-top: 1px solid;
+}
+
+.row5,
+.row5 a {
+}
+
+/* Header
+---------------------------------------------------------------------------------------------------------------*/
+#header {
+  padding: 30px 0;
+}
+
+#logo {
+}
+
+#logo h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 52px;
+  font-variant: small-caps;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  padding: 5px;
+  border: 3px solid #ccc;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Content Area
+---------------------------------------------------------------------------------------------------------------*/
+#container {
+  padding: 80px 0;
+}
+
+/* Content */
+#container #content {
+}
+
+.shout {
+  font-size: 3em;
+  text-transform: capitalize;
+}
+
+.badge {
+  display: inline-block;
+  margin: 10px 0 0 0;
+  padding: 10px 15px;
+  border: 1px solid;
+}
+
+/* Comments */
+#comments ul {
+  margin: 0 0 40px 0;
+  padding: 0;
+  list-style: none;
+}
+
+#comments li {
+  margin: 0 0 10px 0;
+  padding: 15px;
+}
+
+#comments .avatar {
+  float: right;
+  margin: 0 0 10px 10px;
+  padding: 3px;
+  border: 1px solid;
+}
+
+#comments address {
+  font-weight: bold;
+}
+
+#comments time {
+  font-size: smaller;
+}
+
+#comments .comcont {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#comments .comcont p {
+  margin: 10px 5px 10px 0;
+  padding: 0;
+}
+
+/* Sidebar */
+#container .sidebar {
+}
+
+.sidebar .sdb_holder {
+  margin-bottom: 50px;
+}
+
+.sidebar .sdb_holder:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer
+---------------------------------------------------------------------------------------------------------------*/
+#footer {
+  padding: 50px 0;
+}
+
+#footer .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Copyright
+---------------------------------------------------------------------------------------------------------------*/
+#copyright {
+  padding: 30px 0;
+}
+
+#copyright p {
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* Navigation
+---------------------------------------------------------------------------------------------------------------*/
+nav ul,
+nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after,
+#breadcrumb li a::after,
+.sidebar nav a::after {
+  position: absolute;
+  font-family: "FontAwesome";
+  font-size: 10px;
+  line-height: 10px;
+}
+
+/* Top Navigation */
+#mainav {
+  margin-top: 20px;
+  line-height: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#mainav ul {
+}
+
+#mainav ul ul {
+  z-index: 9999;
+  position: absolute;
+  width: 160px;
+  font-size: 14px;
+  text-transform: none;
+}
+
+#mainav ul ul ul {
+  left: 160px;
+  top: 0;
+}
+
+#mainav li {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+#mainav li:last-child {
+  margin-right: 0;
+}
+
+#mainav li li {
+  width: 100%;
+  margin: 0;
+}
+
+#mainav li a {
+  display: block;
+  padding: 10px 5px;
+  border: solid;
+  border-width: 1px 0 0 0;
+}
+
+#mainav li li a {
+  border-width: 0 0 1px 0;
+}
+
+#mainav .drop {
+  padding-left: 15px;
+}
+
+#mainav li li a,
+#mainav li li .drop {
+  display: block;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after {
+  content: "\f0d7";
+}
+
+#mainav .drop::after {
+  top: 15px;
+  left: 5px;
+}
+
+#mainav li li .drop::after {
+  top: 15px;
+  left: 5px;
+}
+
+#mainav ul ul {
+  display: none;
+}
+
+#mainav ul li:hover > ul {
+  display: block;
+}
+
+/* Breadcrumb */
+#breadcrumb {
+  padding: 15px 0;
+}
+
+#breadcrumb ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#breadcrumb li {
+  display: inline-block;
+  margin: 0 6px 0 0;
+  padding: 0;
+}
+
+#breadcrumb li a {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0 12px 0 0;
+  font-size: 12px;
+}
+
+#breadcrumb li a::after {
+  top: 5px;
+  right: 0;
+  content: "\f101";
+}
+
+#breadcrumb li:last-child a {
+  margin: 0;
+  padding: 0;
+}
+
+#breadcrumb li:last-child a::after {
+  display: none;
+}
+
+/* Sidebar Navigation */
+.sidebar nav {
+  display: block;
+  width: 100%;
+}
+
+.sidebar nav li {
+  margin: 0 0 3px 0;
+  padding: 0;
+}
+
+.sidebar nav a {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 5px 10px 5px 15px;
+  text-decoration: none;
+  border: solid;
+  border-width: 0 0 1px 0;
+}
+
+.sidebar nav a::after {
+  top: 9px;
+  left: 5px;
+  content: "\f101";
+}
+
+.sidebar nav ul ul a {
+  padding-left: 35px;
+}
+
+.sidebar nav ul ul a::after {
+  left: 25px;
+}
+
+.sidebar nav ul ul ul a {
+  padding-left: 55px;
+}
+
+.sidebar nav ul ul ul a::after {
+  left: 45px;
+}
+
+/* Pagination */
+.pagination {
+  display: block;
+  width: 100%;
+  text-align: center;
+  clear: both;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0 2px 0 0;
+}
+
+.pagination li:last-child {
+  margin-right: 0;
+}
+
+.pagination a,
+.pagination strong {
+  display: block;
+  padding: 8px 11px;
+  border: 1px solid;
+  font-weight: normal;
+}
+
+/* Forms
+---------------------------------------------------------------------------------------------------------------*/
+form {
+  display: block;
+  width: 100%;
+}
+
+form,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
+label,
+input,
+textarea,
+select {
+  display: block;
+  resize: none;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+}
+
+/* Comment Area */
+#comments textarea {
+  overflow: auto;
+}
+
+#comments div {
+  margin-bottom: 15px;
+}
+
+#comments input[type="submit"],
+#comments input[type="reset"] {
+  display: inline-block;
+  width: auto;
+  min-width: 150px;
+  margin: 0;
+  padding: 8px 5px;
+  cursor: pointer;
+}
+
+/* Footer Form */
+#footer input {
+  padding: 8px;
+}
+
+#footer button[type="submit"] {
+  width: auto;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Tables
+---------------------------------------------------------------------------------------------------------------*/
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+table,
+th {
+  table-layout: auto;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+th,
+td {
+  padding: 5px 8px;
+}
+
+td {
+  border-width: 0 1px;
+}
+
+/* Gallery
+---------------------------------------------------------------------------------------------------------------*/
+#gallery {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#gallery figure figcaption {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+#gallery li {
+  margin-bottom: 30px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* Colours
+---------------------------------------------------------------------------------------------------------------*/
+body {
+  color: #353232;
+  background-color: #68b0e7;
+}
+
+a {
+  color: #68b0e7;
+}
+
+hr,
+.borderedbox {
+  border-color: #d7d7d7;
+}
+
+label span {
+  color: #00d9ff;
+  background-color: inherit;
+}
+
+/* Rows */
+.row1,
+.row1 a {
+  color: #ffffff;
+  background-color: inherit;
+}
+
+.row1 {
+  border-color: #68b0e7;
+}
+
+.row2,
+.row2 a {
+  color: #ffffff;
+  background-color: #68b0e7;
+}
+
+.row3 {
+  color: #222222;
+  background-color: #ffffff;
+}
+
+.row4,
+.row4 a {
+  color: #222222;
+  background-color: #f7f7f7;
+}
+
+.row4 {
+  border-color: #d7d7d7;
+}
+
+.row5,
+.row5 a {
+  color: #ffffff;
+  background-color: #68b0e7;
+}
+
+/* Content */
+.hovered:hover,
+.badge {
+  border-color: #68b0e7;
+}
+
+.hovered:hover i {
+  color: #68b0e7;
+}
+
+.badge {
+  color: #666666;
+}
+
+.hovered:hover .badge,
+.hovered:hover .badge i,
+.badge:hover {
+  color: #ffffff;
+  background-color: #68b0e7;
+}
+
+/* Navigation */
+#mainav li a {
+  color: inherit;
+  border-color: transparent;
+}
+
+#mainav .active a,
+#mainav a:hover,
+#mainav li:hover > a {
+  color: #cccccc;
+  border-color: #cccccc;
+}
+
+#mainav li li a,
+#mainav .active li a {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+#mainav li li:hover > a,
+#mainav .active .active > a {
+  color: #ffffff;
+  background-color: #2a292a;
+}
+
+#container .sidebar nav a {
+  color: #222222;
+  border-color: #d7d7d7;
+}
+
+#container .sidebar nav a:hover {
+  color: #68b0e7;
+}
+
+.pagination a,
+.pagination strong {
+  border-color: #d7d7d7;
+}
+
+.pagination .current {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Tables + Comments */
+table,
+th,
+td,
+#comments .avatar,
+input,
+textarea {
+  border-color: #d7d7d7;
+}
+
+th {
+  color: #ffffff;
+  background-color: #373737;
+}
+
+tr,
+#comments li,
+*[type="submit"],
+*[type="reset"] {
+  color: inherit;
+  background-color: #9ac7de;
+}
+
+tr:nth-child(even),
+#comments li:nth-child(even) {
+  color: inherit;
+  background-color: #f7f7f7;
+}
+
+table a,
+#comments a {
+  background-color: inherit;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 200px;
+}
+
+.modal-content {
+  background-color: #9ae4db;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 10px solid #9ae4db;
+  width: 40%;
+  /* Could be more or less, depending on screen size */
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  pointer-events: visible;
+  background-clip: padding-box;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #e4b39a;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.title1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 35px;
+  margin: 0 0 40px;
+}
+
+#elh1 {
+  width: 360px;
+}
+
+.imagenInfo {
+  height: 32px;
+  width: auto;
+  text-align: center; /* Centrar horizontalmente */
+  vertical-align: middle; /* Centrar verticalmente */
+}
+
+#mainav .AltaOscuro a,
+#mainav a:hover,
+#mainav li:hover > a {
+  color: #cccccc;
+  border-color: #cccccc;
+}
+
+#mainav .altaGris a{
+color: #cccccc;
+border-color: #cccccc;
+}
+
+#mainav .noGrisAlta a{
+  color: #ffffff;
+  border-color: transparent;
+}
+
+#mainav .grisConsulta a{
+  color: #cccccc;
+  border-color: #cccccc;
+  }
+  
+  #mainav .noGrisConsulta a{
+    color: #ffffff;
+    border-color: transparent;
+  }

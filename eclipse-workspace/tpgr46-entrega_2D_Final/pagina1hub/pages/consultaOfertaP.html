@@ -1,0 +1,234 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento -->
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../layout/styles/consultaOferta.css">
+    <link rel="stylesheet" type="text/css" href="../layout/styles/layout.css">
+
+    <script src="../scripts/script.js"></script>
+
+
+    	<link rel="icon" type="image/x-icon" href="../images/logo-redondo.png">
+	<meta charset="utf-8"> <!-- Especificación de la codificación de caracteres -->
+    <title>Consulta de Usuario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-jGsErws5mPW9lKQF2f3C5F3Kn8f5joC1R1Jm2h8pYY6RaCC25w5Vq8v5p14K2Pzfo00U+hFRfLtvS7f+AIz+3WQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="wrapper row1">
+		<header id="header" class="clear">
+			<div id="logo" class="fl_left">
+				<img class="imgl pad5 borderedbox" src="../images/logo-redondo.png" alt="" id="logo123">
+				<h1 id="elh1"><a href="../indexPostulante.html">Trabajo.uy</a></h1>
+			</div>
+			<nav id="mainav" class="fl_right">
+				<ul class="clear">
+					<li class="active noGrisConsulta"><a href="../indexPostulante.html">Inicio</a></li>
+					<li class="grisConsulta"><a class="drop" href="#">Consulta</a>
+						<ul>
+							<li><a href="listarUsuariosP.html">Usuarios</a></li>
+							<li><a href="consultaOfertaP.html">Oferta Laboral</a></li>
+							<li><a href="consultaPostulacionP.html">Postulacion</a></li>
+							<li><a href="consultaTipoPublicacionP.html">Tipo Publicacion</a></li>
+						</ul>
+					</li>
+					<li><a href="#footer">Contacto</a></li>
+					<li><a href="miPerfilPostulante.html">lgarcia</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+    <div class="contenedorCentral">
+        <div id="grid-asideI">
+            <div>
+                <h6 id="filtro">Filtrar por:</h6>
+                <form class="formularioFiltro" id="filtroFormulario" action="consultaOferta.html">
+                    <input id="inputNombre" class="inputs" type="text" placeholder="Nombre"><br>
+                    <input id="inputEmpresa" class="inputs" type="text" placeholder="Empresa"><br>
+                    <input id="inputKeyword" class="inputs" type="text" placeholder="Keyword(s)"><br>
+                    <input id="inputFiltrar" class="inputs" type="submit"><br>
+                </form>
+
+
+            </div>
+
+            <div class="empresas">
+                <h3 id="emp">EMPRESAS</h3>
+                <ul class="listaEmpresas">
+                    <b>
+                        <li><a href="infoConsultaUsuarioEmpresaDePostulante.html">EcoTech</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="divKeywords">
+                <h3 id="keys">KEYWORDS</h3>
+                <ul class="listaKeys">
+                    <b>
+                        <li><a href="consultaOfertaP.html">Tiempo Completo</a></li>
+                        <li><a href="consultaOfertaP.html">Medio Tiempo</a></li>
+                        <li><a href="consultaOfertaP.html">Remoto</a></li>
+                        <li><a href="consultaOfertaP.html">Freelance</a></li>
+                        <li><a href="consultaOfertaP.html">Temporal</a></li>
+                        <li><a href="consultaOfertaP.html">Permanente</a></li>
+                        <li><a href="consultaOfertaP.html">Computacion</a></li>
+                        <li><a href="consultaOfertaP.html">Administración</a></li>
+                        <li><a href="consultaOfertaP.html">Logística</a></li>
+                        <li><a href="consultaOfertaP.html">Contabilidad</a></li>
+                    </b>
+                </ul>
+            </div>
+            <br>
+            <div class="otrosEnlaces">
+                <p>También te puede interesar:</p><br>
+                <p><a href="consultaPostulacionP.html">Consulta de Postulación a oferta laboral</a></p><br>
+                <p><a href="consultaTipoPublicacionP.html">Consulta de Paquete de tipos de publicación de oferta laboral</a>
+                </p><br>
+            </div>
+        </div>
+
+        <div id="grid-centro" class="grid-itemCentral">
+            <h1 class="textoOfertas">Ofertas Laborales</h1>
+                <div id="textoAOcultar">
+            <h3 id="textoFront">Desarrollador FrontEnd</h3>
+            <div class="contenedorFlex"> 
+            <img class="imagen1" src=https://kinsta.com/es/wp-content/uploads/sites/8/2021/12/front-end-developer-1024x512.png alt="Descripción de la imagen" >
+            <div class="textoyBoton">
+            <p id="descFront">Únete a nuestro equipo de desarrollo frontend y crea expericencias de usuario excepcionales.</p>   
+            <a id="AbotonVolver" href="desarrolladorFrontEndP1.html">
+                <img class="imagenInfo chica" src="../images/info.png" alt="infosU">
+            </a>
+            
+           </div>
+        </div>
+        </div>
+
+        <div id="contenidoLeerMas"style="display: none">
+            <br>
+            <p class="fd">Nombre: Desarrollador FrontEnd</p><br>
+            <p class="fd">Remuneración: 90000</p><br>
+            <p class="fd">Empresa: EcoTech</p><br>
+            <p class="fd">Tipo de Publicación: <a href="consultaTipoPublicacion.html?tipoPublicacion=Premium">Premium</a></p><br>
+            <p class="fd">Horario: 09:00-18:00</p><br>
+            <p class="fd">Fecha de Alta: 14/08/2023</p><br>
+            <p class="fd">Comparada con paquete: Básico </p><br>
+
+            <button id="botonLeerMenos">Leer Menos</button>
+        </div>
+
+        <div id="contenidoAdicional" style="display: none;">
+            Este es el contenido adicional que se mostrará después del envío.
+        </div>    
+        <div id="textoAOcultar2">
+
+            <h3 id="textoAnalista">Analista de Marketing Digital</h3>
+            <div id="contenedorFlexAnalista">
+            <img class="imagen2" src="https://blog.orientu.com.br/wp-content/uploads/2021/02/analista-de-marketing.jpeg" alt="Descripción de la imagen" >
+            
+            <div class ="textoyBoton2">
+            <p id="descMarketing">En este papel, serás responsable de analizar datos y tendencias de mercado, desarrollar estrategias de marketing efectivas y medir el rendimiento de nuestras campañas.</p>
+            <a id="AbotonVolver" href="AMarketingDigitalP.html">
+                <img class="imagenInfo" src="../images/info.png" alt="infosU">
+            </a>
+        </div>
+                </div>
+        </div>
+
+            </div>
+
+            <div id="contenidoLeerMas" style="display: none">
+                <br>
+                <p class="fd">Nombre: Desarrollador FrontEnd</p><br>
+                <p class="fd">Remuneración: 90000</p><br>
+                <p class="fd">Empresa: EcoTech</p><br>
+                <p class="fd">Tipo de Publicación: <a href="consultaTipoPublicacion.html?tipoPublicacion=Premium">Premium</a></p><br>
+                <p class="fd">Horario: 09:00-18:00</p><br>
+                <p class="fd">Fecha de Alta: 14/08/2023</p><br>
+                <p class="fd">Comparada con paquete: <a href="consultaTipoPublicacion.html?tipoPublicacion=Basica">Básico</a> </p><br>
+
+                <button id="botonLeerMenos">Leer Menos</button>
+            </div>
+
+            <div id="contenidoAdicional" style="display: none;">
+                Este es el contenido adicional que se mostrará después del envío.
+            </div>
+
+        </div>
+        <div id="contenidoLeerMas2" style="display: none">
+            <br>
+            <p class="fd">Nombre: A. de Marketing Digital</p><br>
+            <p class="fd">Remuneración: 80000</p><br>
+            <p class="fd">Empresa: EcoTech</p><br>
+            <p class="fd">Tipo de Publicación: <a href="consultaTipoPublicacion.html?tipoPublicacion=Premium">Premium</a></p><br>
+            <p class="fd">Horario: 10:00-19:00</p><br>
+            <p class="fd">Fecha de Alta: 15/08/2023</p><br>
+            <button id="botonLeerMenos2">Leer Menos</button>
+        </div>
+    </div>
+
+
+    <div class="contenedorFooter">
+        <div class="wrapper row4">
+            <footer id="footer" class="clear">
+                <div class="one_half first">
+                    <h6 class="title">Sobre nosotros</h6>
+                    <img class="imgl pad5 borderedbox" src="images/images.png" alt="">
+                    <p>Somos una empresa dedicada al crecimiento de las empresas. A traves de nuestra plataforma
+                        ofrecemos
+                        los mejores servicios para nuestros clientes</p>
+                    <p>Al contar con nosotros cuenta con una empresa con una gran trayectoria y calidad. Nuestros
+                        valores
+                        son simples y universales; el cliente por sobre todo. Esto es posible gracias a nuestra pagina
+                        web,
+                        atraves de la cual usted puede dar de alta y postularse a ofertas laborales y con un servicio
+                        personalizado.</p>
+                </div>
+                <div class="one_quarter">
+                    <h6 class="title">TProg G46</h6>
+                    <address class="push30">
+                        Trabajo.Uy<br>
+                        Av. Real No fake, esq totalmente veridica<br>
+                        Montevideo<br>
+                        11600
+                    </address>
+                    <ul class="nospace">
+                        <li class="push10"><i class="icon-time"></i> Lunes - Viernes 9:00am - 9:00pm</li>
+                        <li class="push10"><i class="icon-phone"></i> 099123456</li>
+                        <li><i class="icon-envelope-alt"></i> mailcontacto@trabajouy.com</li>
+                    </ul>
+                </div>
+                <div class="one_quarter">
+                    <h6 class="title">Contacto</h6>
+                    <p>En caso de tener alguna duda / problema puede realizar una consulta, con gusto le atenderemos a
+                        la
+                        brevedad.</p>
+                    <form >
+                        <input class="push15" type="text" name="nombreconsulta" id="nlt_email" value=""
+                            placeholder="Nombre" size="22">
+                        <input class="push15" type="text" name="telefonoconsulta" id="nlt_email" value=""
+                            placeholder="Telefono" size="22">
+                        <input class="push15" type="text" name="emailconsulta" id="nlt_email" placeholder="Email"
+                            value="" size="22">
+                        <input class="push15" type="text" name="asuntoconsulta" id="nlt_email" placeholder="Asunto"
+                            value="" size="22">
+                        <textarea name="consulta" id="comment" cols="25" rows="10"
+                            placeholder="Consulta"></textarea><br>
+                        <input class="badge bold uppercase" type="submit" name="consultaboton"
+                            value="Enviar consulta >">
+                    </form>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

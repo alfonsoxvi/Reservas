@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--
+Template Name: FlatLiner
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+
+<head>
+	<link rel="icon" type="image/x-icon" href="../images/logo-redondo.png">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../layout/styles/miPerfilPostulante.css">
+	<!-- <link rel="stylesheet" typ="text/css" href = "../layout/styles/layout.css"> -->
+
+	<script src="../scripts/miPerfilPostulacion.js"></script>
+</head>
+
+<body>
+	<title>Trabajo.uy | Mi Perfil</title>
+
+	<!-- -------------HEADER------------ -->
+	<div class="wrapper row1">
+		<header id="header" class="clear">
+			<div id="logo" class="fl_left">
+				<img class="imgl pad5 borderedbox" src="../images/logo-redondo.png" alt="" id="logo123">
+				<h1 id="elh1"><a href="../indexPostulante.html">Trabajo.uy</a></h1>
+			</div>
+			<nav id="mainav" class="fl_right">
+				<ul class="clear">
+					<li class="active noGrisConsulta"><a href="../indexPostulante.html">Inicio</a></li>
+					<li class="grisConsulta"><a class="drop" href="#">Consulta</a>
+						<ul>
+							<li><a href="listarUsuariosP.html">Usuarios</a></li>
+							<li><a href="consultaOfertaP.html">Oferta Laboral</a></li>
+							<li><a href="consultaPostulacionP.html">Postulacion</a></li>
+							<li><a href="consultaTipoPublicacionP.html">Tipo Publicacion</a></li>
+						</ul>
+					</li>
+					<li><a href="#footer">Contacto</a></li>
+					<li><a href="miPerfilPostulante.html">lgarcia</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+	<!-- ----------------------HEADER--------------------- -->
+
+	<div id="infoPerfil">
+		<h2 id="miPerfil"> Mi Perfil</h2>
+
+		<div id="contenedorHeader">
+			<img id="fotoPerfilEmpresa" src="https://tinyurl.com/yckek63e">
+			<div id="infoHeader">
+				<h2 id="nombreUsuarioEmpresa"> Lucía García</h2>
+				<h3 id="nicknameUsuarioEmpresa"> lgarcia </h3>
+				<h4 id="lastLogin"> Ultimo Ingreso: 01/01/2023 </h4>
+			</div>
+			<a id="buttonCerrarSesion" href="../index.html"><b>Cerrar Sesión </b></a>
+
+		</div>
+
+		<div id="contenedor">
+			<div id="subcontenedorIndice">
+				<button class="buttonIndice" id="buttonInfo"> Información </button>
+				<button class="buttonIndice" id="buttonPostulaciones"> Postulaciones</button>
+				<button class="buttonIndice" id="buttonModificarDatos" onclick="window.location = 'modificarDatos.html';"> Modificar Datos </button>
+			</div>
+
+			<table class="tablaContenido tablaVisible " id="tablaInfo">
+				<tr>
+					<th>
+						<h5><b> Nombre:</b> Lucía</h5>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h5> <b>Apellido:</b> García</h5>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h5> <b>E-mail:</b> lgarcia85@gmail.com </h5>
+					</th>
+				</tr>
+				<th>
+					<h5> <b>Fecha de nacimiento:</b> 15/03/1985 </h5>
+				</th>
+				</tr>
+				<tr>
+					<th>
+						<h5> <b>Nacionalidad:</b>Uruguaya</h5>
+					</th>
+				</tr>
+			</table>
+
+			<table class="tablaContenido tablaInvisible" id="tablaPostulaciones">
+				<tr>
+					<td>
+						<table id="DesarrolladorFrontend">
+							<tr>
+								<td class="rowImagen">
+									<img class="imagenPostulaciones" src="https://tinyurl.com/45nsf34m">
+								</td>
+							</tr>
+							<tr>
+								<td class="rowInfo">
+									<table class="columnaPostulaciones">
+										<tr>
+											<td>
+												<h5> <b>Nombre oferta: </b> Desarrollador Frontend </h5>
+												<h5> <b> Motivación: </b>Estoy emocionada por
+													la oportunidad de formar parte de un equipo
+													dinámico y contribuir
+													con mis habilidades de
+													liderazgo.</h5>
+												<button class "buttonAmpliarPostulacion" id="buttonAmpliarPostulacionDesarrollador"><a
+														href="consultaPostulacionP.html"> Más
+														Información</a></button>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+
+				</tr>
+			</table>
+			</td>
+			</tr>
+			</table>
+		</div>
+	</div>
+
+
+	<!-- ####################################### FOOTER  ################################################ -->
+	<div class="wrapper row4">
+		<footer id="footer" class="clear">
+			<div class="one_half first">
+				<h6 class="title">Sobre nosotros</h6>
+				<img class="imgl pad5 borderedbox" src="images/images.png" alt="">
+				<p>Somos una empresa dedicada al crecimiento de las empresas. A traves de nuestra plataforma ofrecemos
+					los mejores servicios para nuestros clientes</p>
+				<p>Al contar con nosotros cuenta con una empresa con una gran trayectoria y calidad. Nuestros valores
+					son simples y universales; el cliente por sobre todo. Esto es posible gracias a nuestra pagina web,
+					atraves de la cual usted puede dar de alta y postularse a ofertas laborales y con un servicio
+					personalizado.</p>
+			</div>
+			<div class="one_quarter">
+				<h6 class="title">TProg G46</h6>
+				<address class="push30">
+					Trabajo.Uy<br>
+					Av. Real No fake, esq totalmente veridica<br>
+					Montevideo<br>
+					11600
+				</address>
+				<ul class="nospace">
+					<li class="push10"><i class="icon-time"></i> Lunes - Viernes 9:00am - 9:00pm</li>
+					<li class="push10"><i class="icon-phone"></i> 099123456</li>
+					<li><i class="icon-envelope-alt"></i> mailcontacto@trabajouy.com</li>
+				</ul>
+			</div>
+			<div class="one_quarter">
+				<h6 class="title">Contacto</h6>
+				<p>En caso de tener alguna duda / problema puede realizar una consulta, con gusto le atenderemos a la
+					brevedad.</p>
+				<form>
+					<input class="push15" type="text" name="nombreconsulta" id="nlt_email" value="" placeholder="Nombre"
+						size="22">
+					<input class="push15" type="text" name="telefonoconsulta" id="nlt_email" value=""
+						placeholder="Telefono" size="22">
+					<input class="push15" type="text" name="emailconsulta" id="nlt_email" placeholder="Email" value=""
+						size="22">
+					<input class="push15" type="text" name="asuntoconsulta" id="nlt_email" placeholder="Asunto" value=""
+						size="22">
+					<textarea name="consulta" id="comment" cols="25" rows="10" placeholder="Consulta"></textarea><br>
+					<input class="badge bold uppercase" type="submit" name="consultaboton" value="Enviar consulta >">
+				</form>
+			</div>
+		</footer>
+	</div>
+
+	<!-- ################################################################################################ -->
+
+	<!--############################# Scripts #############################-->
+
+
+
+
+
+
+</body>
+
+</html>

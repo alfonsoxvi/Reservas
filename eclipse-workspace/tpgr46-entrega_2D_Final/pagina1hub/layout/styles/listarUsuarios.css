@@ -1,0 +1,10 @@
+.imagenLU{
+    height: 60px;
+    width: auto;
+}
+.imagenInfo{
+    height: 32px;
+    width: auto;
+    text-align: center; /* Centrar horizontalmente */
+    vertical-align: middle; /* Centrar verticalmente */
+}

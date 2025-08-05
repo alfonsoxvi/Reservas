@@ -1,0 +1,188 @@
+body{
+font-family: 'Montserrat', sans-serif;
+}
+
+.contenedorHeader{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 100px;
+background-color: skyblue;
+border: solid black;
+}
+
+.contenedorCentral{
+display: grid;
+grid-template-columns: 1fr 4fr;
+grid-template-rows: 1000px;    
+background-color: white;
+color: black;
+}
+
+#grid-centro{
+background-color: white;
+margin: 0px;
+overflow: auto;
+}
+
+
+/*.contenedorFooter{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 100px;
+background-color: skyblue;
+border: solid black;
+border-top: 0;
+}
+*/
+
+.divKeywords{
+position: relative;
+margin: 20px;
+border: solid black;
+}
+
+#keys{
+    margin: 0;
+    background-color: darkgrey;
+    border-bottom: solid black;
+    }
+
+.listaKeys{
+    margin: 0px;
+    background-color: lightgrey;
+}
+
+.ElementosHeader{
+position: relative;
+bottom: 80px;
+left: 150px;
+
+}
+
+.imagen1{
+width: 100px;
+height: 100px;
+margin-left: 10px;
+}
+
+.imagen2{
+width: 100px;
+height: 100px;    
+margin-left: 10px;
+}
+
+.textoOfertas{
+text-align: center;   
+}
+
+#descFront{
+font-size: 20px;
+position: relative;
+display: flex;
+margin: 5px;
+width: auto;
+height: auto;
+width:100%;
+}
+
+.contenedorFlex{
+display: flex; 
+}
+
+#textoFront{
+margin: 10px;
+}
+
+#textoAnalista{
+margin: 10px;
+}
+img{
+margin: 10px;
+}
+
+#contenedorFlexAnalista{
+display: flex;    
+}
+
+#descMarketing{
+font-size:20px;
+width: auto;
+height: auto;
+}
+
+#grid-asideI{
+    background-color: white;
+    border-top: 0;
+    border-left: 0;
+    }
+
+.inputs{
+font-size: 20px;
+margin: 1px;    
+width: 90%;
+margin-left: 5%;
+}
+
+#filtro{
+margin: 7px;
+font-size: 20px;
+text-align: center;
+}
+
+#lorem{
+font-size: 50px;
+}
+
+.otrosEnlaces{
+position: relative;
+margin: 20px;
+}
+
+.empresas{
+margin: 20px;
+border: solid black;
+}
+
+.textoOfertas{
+background-color: lightgrey;
+}
+
+#emp{
+background-color: grey;
+border: solid black;
+border-top: 0;
+border-left: 0;
+border-right: 0;
+margin: 0;
+}
+
+.listaEmpresas{
+background-color: lightgrey;
+margin: 0px;
+top: 0px;
+}
+
+#inputFiltrar{
+font-size: 15px;
+}
+
+
+#botonLeerMas{
+margin: 5px;
+}
+
+#contenidoLeerMas{
+margin-left: 1%;
+}
+
+.fd{
+margin: 0px;
+}
+
+#botonLeerMas2{
+margin-left:  10px;
+}
+
+#contenidoLeerMas2{
+margin-left: 1%;
+}

@@ -1,0 +1,537 @@
+@charset "utf-8";
+
+
+@import url("fontawesome-3.2.1.min.css");
+@import url("framework.css");
+@import url("login.css");
+
+body {
+	background-color: #68b0e7;
+}
+
+/* Header
+---------------------------------------------------------------------------------------------------------------*/
+#header {
+	background-color: #68b0e7;
+	padding: 30px 0;
+	width: 100%;
+	margin: 0;
+}
+
+#logo h1 {
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-size: 52px;
+	font-variant: small-caps;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	width: 35%;
+	margin-bottom: 10px;
+}
+
+.search-input {
+	padding: 5px;
+	border: 3px solid #ccc;
+	border-radius: 50px;
+	margin-right: 10px;
+}
+
+.search-button {
+	padding: 5px 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+/* Rows */
+.row1,
+.row1 a {
+	color: #FFFFFF;
+	background-color: inherit;
+}
+
+.row1 {
+	border-color: #68b0e7;
+}
+
+.row2,
+.row2 a {
+	color: #FFFFFF;
+	background-color: #68b0e7;
+}
+
+.row3 {
+	color: #222222;
+	background-color: #FFFFFF;
+}
+
+.row4,
+.row4 a {
+	color: #222222;
+	background-color: #F7F7F7;
+}
+
+.row4 {
+	border-color: #D7D7D7;
+}
+
+.row5,
+.row5 a {
+	color: #FFFFFF;
+	background-color: #68b0e7;
+}
+
+/* Mi Perfil
+---------------------------------------------------------------------------------------------------------------*/
+
+#miPerfil {
+    font-family: Georgia, "Times New Roman", Times, serif;	font-size: 45px;
+	/*color: rgb(216, 216, 216); */
+	color: black;
+	margin-bottom: 40px;
+	text-align: center;
+	margin-bottom: 4%;
+	font-variant: small-caps;
+
+}
+
+#infoPerfil {
+	background-color: white;
+	margin: 0 auto;
+	padding: 80px 0;
+	width: 80%;
+}
+	
+#contenedorHeader {
+	width: 80%;
+	position: relative;
+	margin: 0 10% 0;
+	display: flex;
+	background-color: rgb(16, 67, 105);
+}
+
+#infoHeader {
+	position: relative;
+	padding-top: 20px;
+	padding-left: 31px;
+}
+
+#fotoPerfilEmpresa {
+	left: 0;
+	border: 0;
+	width: 175px;
+	height: auto;
+	margin: 4px;
+	order: 0;
+}
+
+
+#nombreUsuarioEmpresa {
+
+	text-shadow: 0px 1.5px 0.5px rgba(0, 0, 0, 0.5);
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	width: 900px;
+}
+
+#nicknameUsuarioEmpresa {
+	margin-top: px;
+	text-shadow: 0px 1px 0.5px rgb(255, 255, 255);
+	color: rgb(192, 192, 192);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	order: 1;
+	margin-bottom: 33px;
+	width: 900px;
+}
+
+#lastLogin {
+	text-shadow: 0px 1.5px 0.5px rgba(0, 0, 0, 0.5);
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 900px;
+	font-size: 17px;
+}
+
+#buttonCerrarSesion{
+	padding-right: 3px;
+	color: white;
+	text-decoration: none;
+	background-color:rgb(16, 67, 105);
+	border-width: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#buttonCerrarSesion:hover{
+	color:white;
+	text-decoration: underline;
+}
+
+#contenedor {
+	border-color: transparent;
+	background-color: white;
+	position: relative;
+	margin: 0 10%;
+	z-index: 2;
+}
+
+#subcontenedorIndice {
+	order: 0;
+	border-color: transparent;
+	border-radius: 5px 5px 0 0;
+	background-color: rgb(224, 224, 224);
+	position: relative;
+	z-index: 1;
+	width: auto;
+	height: 45px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.buttonIndice {
+	width: auto;
+	color: black;
+	background-color: #9bc8df;
+	border-color: rgba(133, 187, 216, 0.2);
+
+	border-width: 0.5px;
+	height: 45px;
+	font-size: 14px;
+}
+
+#buttonInfo {
+	width: auto;
+	background-color: #16abfb;
+}
+
+#buttonModificarDatos {
+	width: auto;
+	color: blue;
+	background-color: rgb(224, 224, 224);
+	border-width: 0;
+	border-radius: 0 5px 0 0;
+	position: absolute;
+	right: 0;
+}
+
+.buttonIndice:hover {
+	background-color: #0160c2;
+	color: white;
+}
+
+#buttonModificarDatos:hover {
+	text-decoration: underline;
+}
+
+.tablaContenido {
+	text-align: center;
+	width: 100%;
+}
+
+.tablaVisible {
+	display: table;
+}
+
+.tablaInvisible {
+	display: none;
+}
+
+#tablaOferta td {
+	text-align: center;
+}
+
+#tablaInfo * {
+	background-color: rgb(203, 226, 239, 1);
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+.columnaOferta * {
+	background-color: rgb(203, 226, 239, 1);
+	font-size: 15px;
+	align-items: center;
+}
+
+.rowImagen {
+	background-color: rgb(210, 210, 210);
+}
+
+.rowInfo{
+	border: 0;
+}
+
+.imagenOferta {
+	top: 0;
+	height: 90px;
+	width: auto;
+}
+
+#tablaOferta {
+	width: 100%;
+	table-layout: fixed;
+}
+
+#buttonAmpliarDesarrollador{
+	border: 0;
+	background-color: transparent;
+}
+
+#buttonAmpliarMarketing{
+	border: 0;
+	background-color: transparent;
+}
+
+#estadoOferta {
+	color: green;
+	
+}
+
+/* Content Area
+---------------------------------------------------------------------------------------------------------------*/
+#container {
+	padding: 80px 0;
+}
+
+/* Content */
+
+.shout {
+	font-size: 3em;
+	text-transform: capitalize;
+}
+
+.badge {
+	display: inline-block;
+	margin: 10px 0 0 0;
+	padding: 10px 15px;
+	border: 1px solid;
+}
+
+/* Comments */
+#comments ul {
+	margin: 0 0 40px 0;
+	padding: 0;
+	list-style: none;
+}
+
+#comments li {
+	margin: 0 0 10px 0;
+	padding: 15px;
+}
+
+#comments .avatar {
+	float: right;
+	margin: 0 0 10px 10px;
+	padding: 3px;
+	border: 1px solid;
+}
+
+#comments address {
+	font-weight: bold;
+}
+
+#comments time {
+	font-size: smaller;
+}
+
+#comments .comcont {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#comments .comcont p {
+	margin: 10px 5px 10px 0;
+	padding: 0;
+}
+
+/* Sidebar */
+#container .sidebar {}
+
+.sidebar .sdb_holder {
+	margin-bottom: 50px;
+}
+
+.sidebar .sdb_holder:last-child {
+	margin-bottom: 0;
+}
+
+/* Navigation
+---------------------------------------------------------------------------------------------------------------*/
+nav ul,
+nav ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after,
+#breadcrumb li a::after,
+.sidebar nav a::after {
+	position: absolute;
+	font-family: "FontAwesome";
+	font-size: 10px;
+	line-height: 10px;
+}
+
+/* Top Navigation */
+#mainav {
+	margin-top: 20px;
+	line-height: normal;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+#mainav ul {}
+
+#mainav ul ul {
+	z-index: 9999;
+	position: absolute;
+	width: 160px;
+	font-size: 14px;
+	text-transform: none;
+}
+
+#mainav ul ul ul {
+	left: 160px;
+	top: 0;
+}
+
+#mainav li {
+	display: inline-block;
+	position: relative;
+	margin: 0 20px 0 0;
+	padding: 0;
+}
+
+#mainav li:last-child {
+	margin-right: 0;
+}
+
+#mainav li li {
+	width: 100%;
+	margin: 0;
+}
+
+#mainav li a {
+	display: block;
+	padding: 10px 5px;
+	border: solid;
+	border-width: 1px 0 0 0;
+}
+
+#mainav li li a {
+	border-width: 0 0 1px 0;
+}
+
+#mainav .drop {
+	padding-left: 15px;
+}
+
+#mainav li li a,
+#mainav li li .drop {
+	display: block;
+	margin: 0;
+	padding: 10px 15px;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after {
+	content: "\f0d7";
+}
+
+#mainav .drop::after {
+	top: 15px;
+	left: 5px;
+}
+
+#mainav li li .drop::after {
+	top: 15px;
+	left: 5px;
+}
+
+#mainav ul ul {
+	display: none;
+}
+
+#mainav ul li:hover>ul {
+	display: block;
+}
+
+
+/* Navigation */
+#mainav li a {
+	color: inherit;
+	border-color: transparent;
+}
+
+#mainav .active a,
+#mainav a:hover,
+#mainav li:hover>a {
+	color: #CCCCCC;
+	border-color: #CCCCCC;
+}
+
+#mainav li li a,
+#mainav .active li a {
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, .6);
+	border-color: rgba(0, 0, 0, .6);
+}
+
+#mainav li li:hover>a,
+#mainav .active .active>a {
+	color: #FFFFFF;
+	background-color: #2a292a;
+}
+
+#container .sidebar nav a {
+	color: #222222;
+	border-color: #D7D7D7;
+}
+
+#container .sidebar nav a:hover {
+	color: #68b0e7;
+}
+
+.pagination a,
+.pagination strong {
+	border-color: #D7D7D7;
+}
+
+.pagination .current {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+/* Footer Form */
+
+#footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+	
+#footer input {
+	padding: 8px;
+}
+
+#footer button[type="submit"] {
+	width: auto;
+	margin: 0;
+	cursor: pointer;
+}
+
+#elh1{
+	width: 360px;
+  }

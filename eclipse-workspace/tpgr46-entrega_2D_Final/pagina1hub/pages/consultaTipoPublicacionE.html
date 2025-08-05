@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--
+Template Name: FlatLiner
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+
+<head>
+	<title>Trabajo.uy</title>
+		<link rel="icon" type="image/x-icon" href="../images/logo-redondo.png">
+	<meta charset="utf-8">
+	<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body id="top">
+
+	<!-- ################################## HEADER PARA NAVEGAR ######################################## -->
+	<div class="wrapper row1">
+		<header id="header" class="clear">
+			<div id="logo" class="fl_left">
+				<img class="imgl pad5 borderedbox" src="../images/logo-redondo.png" alt="" id="logo123">
+				<h1 id="elh1"><a href="../indexEmpresa.html">Trabajo.uy</a></h1>
+			</div>
+			<nav id="mainav" class="fl_right">
+				<ul class="clear">
+					<li class="active"><a href="../indexEmpresa.html">Inicio</a></li>
+					<li><a class="drop" href="#">Alta</a>
+						<ul>
+							<li><a href="altaOferta.html">Oferta Laboral</a></li>
+						</ul>
+					</li>
+					<li><a class="drop" href="#">Consulta</a>
+						<ul>
+							<li><a href="listarUsuariosE.html">Usuarios</a></li>
+							<li><a href="consultaOfertaE.html">Oferta Laboral</a></li>
+							<li><a href="consultaTipoPublicacionE.html">Tipo Publicacion</a></li>
+						</ul>
+					</li>
+				  	<li><a href="../indexEmpresa.html#footer">Contacto</a></li>	
+					<li><a href="miPerfilEmpresa.html">EcoTech</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+	<!-- #################################### TEXTO PRINCIPAL ########################################## -->
+	<div class="wrapper row3">
+		<main id="container" class="clear">
+
+			<div class="center push80">
+				<h1 class="shout">Tipos de Publicaciones</h1>
+				<p class="push30">Al momento de crear una oferta laboral es necesario que se seleccione un tipo de
+					publicacion. Los tipos de publicaciones existentes son los siguientes:</p>
+			</div>
+
+			<div class="clear center" action="php/tracking.php">
+				<div class="one_third first">
+					<div class="pad30 borderedbox hovered"><i class="icon-fighter-jet icon-5x"></i>
+						<h2>Premium</h2>
+						<p>Obtén máxima visibilidad.</p>
+						<p class="nospace"><a class="badge uppercase"
+								onclick="document.getElementById('modalPremium').style.display='block'">Conocer más <i
+									class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="one_third">
+					<div class="pad30 borderedbox hovered"><i class="icon-bullseye icon-5x"></i>
+						<h2>Destacada</h2>
+						<p>Destaca tu anuncio.</p>
+						<p class="nospace"><a class="badge uppercase"
+								onclick="document.getElementById('modalDestacada').style.display='block'">Conocer más <i
+									class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="one_third">
+					<div class="pad30 borderedbox hovered"><i class="icon-briefcase icon-5x"></i>
+						<h2>Estándar</h2>
+						<p>Mejora la posición de tu anuncio.</p>
+						<p class="nospace"><a class="badge uppercase"
+								onclick="document.getElementById('modalEstandar').style.display='block'">Conocer más <i
+									class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="one_third first">
+					<div class="pad30 borderedbox hovered"><i class="icon-umbrella icon-5x"></i>
+						<h2>Básica</h2>
+						<p>Publica de forma sencilla en la lista de ofertas.</p>
+						<p class="nospace"><a class="badge uppercase"
+								onclick="document.getElementById('modalBasica').style.display='block'">Conocer más <i
+									class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<div id="modalPremium" class="modal">
+		<form class="modal-content animate">
+			<h2 id="nombreTP">Premium</h2>
+			<button class="close">X</button>
+			<div class="container clear center push30 bold" style="background-color:#f1f1f1">
+				<br>
+				<p id="descripcionTP">Obtén máxima visibilidad</p><br>
+				<p id="exposicionTP">Exposicion: 1</p><br>
+				<p id="duracionTP">Duracion: 30 días</p><br>
+				<p id="costoTP">Costo: $4000</p><br>
+				<p id="fechaAltaTP">Alta: 10/08/2023</p>
+				<br>
+			</div>
+		</form>
+	</div>
+
+	<div id="modalDestacada" class="modal">
+		<form class="modal-content animate">
+			<h2 id="nombreTP">Destacada</h2>
+			<button class="close">X</button>
+			<div class="container clear center push30 bold" style="background-color:#f1f1f1">
+				<br>
+				<p id="descripcionTP">Destaca tu anuncio</p><br>
+				<p id="exposicionTP">Exposicion: 2</p><br>
+				<p id="duracionTP">Duracion: 15 días</p><br>
+				<p id="costoTP">Costo: $500</p><br>
+				<p id="fechaAltaTP">Alta: 05/08/2023</p>
+				<br>
+			</div>
+		</form>
+	</div>
+
+	<div id="modalEstandar" class="modal">
+		<form class="modal-content animate">
+			<h2 id="nombreTP">Estándar</h2>
+			<button class="close">X</button>
+			<div class="container clear center push30 bold" style="background-color:#f1f1f1">
+				<br>
+				<p id="descripcionTP">Mejora la posición de tu anuncio</p><br>
+				<p id="exposicionTP">Exposicion: 3</p><br>
+				<p id="duracionTP">Duracion: 20 días</p><br>
+				<p id="costoTP">Costo: $150</p><br>
+				<p id="fechaAltaTP">Alta: 15/08/2023</p>
+				<br>
+			</div>
+		</form>
+	</div>
+
+	<div id="modalBasica" class="modal">
+		<form class="modal-content animate">
+			<h2 id="nombreTP">Básica</h2>
+			<button class="close">X</button>
+			<div class="container clear center push30 bold" style="background-color:#f1f1f1">
+				<br>
+				<p id="descripcionTP">Publica de forma sencilla en la lista de ofertas</p><br>
+				<p id="exposicionTP">Exposicion: 4</p><br>
+				<p id="duracionTP">Duracion: 7 días</p><br>
+				<p id="costoTP">Costo: $50</p><br>
+				<p id="fechaAltaTP">Alta: 07/08/2023</p>
+				<br>
+			</div>
+		</form>
+	</div>
+
+
+	<!-- ####################################### FOOTER  ################################################ -->
+	<div class="wrapper row4">
+		<footer id="footer" class="clear">
+			<div class="one_half first">
+				<h6 class="title">Sobre nosotros</h6>
+				<img class="imgl pad5 borderedbox" src="../images/images.png" alt="">
+				<p>Somos una empresa dedicada al crecimiento de las empresas. A traves de nuestra plataforma ofrecemos
+					los mejores servicios para nuestros clientes</p>
+				<p>Al contar con nosotros cuenta con una empresa con una gran trayectoria y calidad. Nuestros valores
+					son simples y universales; el cliente por sobre todo. Esto es posible gracias a nuestra pagina web,
+					atraves de la cual usted puede dar de alta y postularse a ofertas laborales y con un servicio
+					personalizado.</p>
+			</div>
+			<div class="one_quarter">
+				<h6 class="title">TProg G46</h6>
+				<address class="push30">
+					Trabajo.Uy<br>
+					Av. Real No fake, esq totalmente veridica<br>
+					Montevideo<br>
+					11600
+				</address>
+				<ul class="nospace">
+					<li class="push10"><i class="icon-time"></i> Lunes - Viernes 9:00am - 9:00pm</li>
+					<li class="push10"><i class="icon-phone"></i> 099123456</li>
+					<li><i class="icon-envelope-alt"></i> mailcontacto@trabajouy.com</li>
+				</ul>
+			</div>
+			<div class="one_quarter">
+				<h6 class="title">Contacto</h6>
+				<p>En caso de tener alguna duda / problema puede realizar una consulta, con gusto le atenderemos a la
+					brevedad.</p>
+				<form >
+					<input class="push15" type="text" name="nombreconsulta" id="nlt_email" value="" placeholder="Nombre"
+						size="22">
+					<input class="push15" type="text" name="telefonoconsulta" id="nlt_email" value=""
+						placeholder="Telefono" size="22">
+					<input class="push15" type="text" name="emailconsulta" id="nlt_email" placeholder="Email" value=""
+						size="22">
+					<input class="push15" type="text" name="asuntoconsulta" id="nlt_email" placeholder="Asunto" value=""
+						size="22">
+					<textarea name="consulta" id="comment" cols="25" rows="10" placeholder="Consulta"></textarea><br>
+					<input class="badge bold uppercase" type="submit" name="consultaboton" value="Enviar consulta >">
+				</form>
+			</div>
+		</footer>
+	</div>
+
+	<!-- ################################################################################################ -->
+	<div class="wrapper row5">
+		<div id="copyright" class="clear">
+			<p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Trabajo.Uy</a></p>
+			<p class="fl_right">Grupo 46<a target="_blank" href="http://www.os-templates.com/"
+					title="Free Website Templates"></a></p>
+		</div>
+	</div>
+	<script>
+		var modalPremium = document.getElementById('modalPremium');
+		var modalDestacada = document.getElementById('modalDestacada');
+		var modalEstandar = document.getElementById('modalEstandar');
+		var modalBasica = document.getElementById('modalBasica');
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const tipoPublicacion = urlParams.get('tipoPublicacion');
+		if (tipoPublicacion != null) {
+			if (tipoPublicacion == "Premium")
+				modalPremium.style.display = "block";
+			if (tipoPublicacion == "Destacada")
+				modalDestacada.style.display = "block";
+			if (tipoPublicacion == "Estandar")
+				modalEstandar.style.display = "block";
+			if (tipoPublicacion == "Basica")
+				modalBasica.style.display = "block";
+		}
+		window.onclick = function (event) {
+			if (event.target == modalPremium)
+				modalPremium.style.display = "none";
+			if (event.target == modalDestacada)
+				modalDestacada.style.display = "none";
+			if (event.target == modalEstandar)
+				modalEstandar.style.display = "none";
+			if (event.target == modalBasica)
+				modalBasica.style.display = "none";
+		}
+	</script>
+</body>
+
+</html>
