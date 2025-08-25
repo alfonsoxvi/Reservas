@@ -1,0 +1,27 @@
+# PostgreSQL configuration
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: reservas_api_development
+  username: reservas_api
+  password: base1
+  host: localhost
+
+test:
+  <<: *default
+  database: reservas_api_test
+  username: reservas_api
+  password: base1
+  host: localhost
+
+production:
+  <<: *default
+  database: reservas_api_production
+  username: reservas_api
+  password: <%= ENV["RESERVAS_API_DATABASE_PASSWORD"] %>
+  host: localhost
+

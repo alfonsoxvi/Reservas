@@ -1,0 +1,32 @@
+<h1>Reservas del Restaurante</h1>
+
+<% if flash[:notice] %>
+  <p style="color: green;"><%= flash[:notice] %></p>
+<% end %>
+
+<% if flash[:alert] %>
+  <p style="color: red;"><%= flash[:alert] %></p>
+<% end %>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Nombre</th>
+    <th>Personas</th>
+    <th>Fecha</th>
+    <th>Hora</th>
+    <th>Teléfono</th>
+  </tr>
+  <% @reservas.each do |reserva| %>
+    <tr>
+      <td><%= reserva.nombre %></td>
+      <td><%= reserva.personas %></td>
+      <td><%= reserva.fecha || "--" %></td>
+      <td><%= reserva.hora ? reserva.hora.strftime("%H:%M") : "--:--" %></td>
+      <td><%= reserva.telefono || "--" %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+<%= link_to "Crear nueva reserva", new_reserva_path %>
+

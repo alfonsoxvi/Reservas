@@ -1,0 +1,40 @@
+<h1>Nueva Reserva</h1>
+
+<% if flash[:alert] %>
+  <p style="color: red;"><%= flash[:alert] %></p>
+<% end %>
+
+<%= form_with model: @reserva, local: true do |f| %>
+  <p>
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </p>
+
+  <p>
+    <%= f.label :personas %><br>
+    <%= f.number_field :personas %>
+  </p>
+
+  <p>
+    <%= f.label :fecha %><br>
+    <%= f.date_field :fecha %>
+  </p>
+
+  <p>
+    <%= f.label :hora %><br>
+    <%= f.time_field :hora %>
+  </p>
+
+  <p>
+    <%= f.label :telefono %><br>
+    <%= f.text_field :telefono %>
+  </p>
+
+  <p>
+    <%= f.submit "Crear Reserva" %>
+  </p>
+<% end %>
+
+<br>
+<%= link_to "Volver al listado", reservas_path %>
+
