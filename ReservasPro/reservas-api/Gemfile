@@ -13,6 +13,9 @@ gem "puma", ">= 5.0"
 
 # CORS
 gem "rack-cors"
+# Performance booster (cache de archivos)
+gem 'bootsnap', '>= 1.18.6', require: false
+
 
 # Gems opcionales para desarrollo/test
 group :development, :test do
