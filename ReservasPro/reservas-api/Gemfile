@@ -16,6 +16,9 @@ gem "rack-cors"
 # Performance booster (cache de archivos)
 gem 'bootsnap', '>= 1.18.6', require: false
 
+gem "cgi", ">= 0.3.3"
+
+
 
 # Gems opcionales para desarrollo/test
 group :development, :test do
