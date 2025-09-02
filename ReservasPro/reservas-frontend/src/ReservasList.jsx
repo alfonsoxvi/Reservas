@@ -4,7 +4,7 @@ function ReservasList() {
   const [reservas, setReservas] = useState([]);
 
   useEffect(() => {
-    fetch("https://reservas-h5et.onrender.com") // tu API 
+    fetch("https://reservas-h5et.onrender.com/reservas") // tu API 
       .then((res) => res.json())
       .then((data) => setReservas(data))
       .catch((err) => console.error("Error al traer reservas:", err));
