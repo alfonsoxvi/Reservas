@@ -22,7 +22,7 @@ export default function ReservaForm() {
     };
 
     try {
-      const response = await fetch("http://localhost:4000/reservas", {
+      const response = await fetch("https://reservas-h5et.onrender.com/reservas", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
