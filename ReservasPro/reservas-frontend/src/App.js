@@ -32,20 +32,21 @@ function App() {
       </section>
 
       {/* Galería */}
-      <section className="py-16 px-6 bg-gray-100 text-center">
-        <h2 className="text-3xl font-semibold mb-8 text-gray-800">Nuestra selección</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white shadow rounded-lg p-6 flex items-center justify-center h-64 text-gray-400 text-xl">
-            Imagen 1
-          </div>
-          <div className="bg-white shadow rounded-lg p-6 flex items-center justify-center h-64 text-gray-400 text-xl">
-            Imagen 2
-          </div>
-          <div className="bg-white shadow rounded-lg p-6 flex items-center justify-center h-64 text-gray-400 text-xl">
-            Imagen 3
-          </div>
-        </div>
-      </section>
+<section className="py-16 px-6 bg-gray-100 text-center">
+  <h2 className="text-3xl font-semibold mb-8 text-gray-800">Nuestra selección</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="bg-white shadow rounded-lg overflow-hidden">
+      <img src="/images/imagen1.jpg" alt="Plato 1" className="w-full h-64 object-cover" />
+    </div>
+    <div className="bg-white shadow rounded-lg overflow-hidden">
+      <img src="/images/imagen2.jpg" alt="Plato 2" className="w-full h-64 object-cover" />
+    </div>
+    <div className="bg-white shadow rounded-lg overflow-hidden">
+      <img src="/images/imagen3.jpg" alt="Plato 3" className="w-full h-64 object-cover" />
+    </div>
+  </div>
+</section>
+
 
       {/* Formulario de reservas */}
       <section className="flex justify-center my-16 px-4">
