@@ -5,60 +5,81 @@ import { FaWhatsapp } from "react-icons/fa";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans flex flex-col">
-      {/* Header */}
-      <header className="bg-white text-gray-900 p-6 text-center text-2xl font-bold shadow">
-        Viti Bar
+
+      {/* Navbar */}
+      <header className="bg-white shadow fixed w-full z-10">
+        <div className="container mx-auto flex items-center justify-between p-4">
+          <div className="text-2xl font-bold text-gray-800">Viti Bar</div>
+          <nav className="space-x-6">
+            <a href="#inicio" className="text-gray-700 hover:text-gray-900">Inicio</a>
+            <a href="#acerca" className="text-gray-700 hover:text-gray-900">Quiénes somos</a>
+            <a href="#galeria" className="text-gray-700 hover:text-gray-900">Galería</a>
+            <a href="#reservas" className="text-gray-700 hover:text-gray-900">Reservas</a>
+            <a href="#contacto" className="text-gray-700 hover:text-gray-900">Contacto</a>
+          </nav>
+        </div>
       </header>
 
       {/* Hero */}
-      <section className="bg-gray-100 py-20 text-center">
-        <h1 className="text-5xl font-extrabold mb-4">Bienvenido a Viti Bar</h1>
-        <p className="text-xl text-gray-600">
-          Vinos y empanadas
-        </p>
-      </section>
-
-      {/* Quiénes somos */}
-      <section className="py-16 px-6 bg-white text-center">
-        <h2 className="text-3xl font-semibold mb-6 text-gray-800">
-          Quiénes somos
-        </h2>
-        <p className="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700">
-          En <strong>Viti Bar</strong> somos apasionados por el vino y la buena
-          mesa. Desde 1995 ofrecemos una experiencia única, con una cuidada
-          selección de vinos nacionales e internacionales, maridajes perfectos y
-          un ambiente cálido para disfrutar con amigos o en pareja.
-        </p>
-      </section>
-
-      {/* Galería */}
-<section className="py-16 px-6 bg-gray-100 text-center">
-  <h2 className="text-3xl font-semibold mb-8 text-gray-800">Nuestra selección</h2>
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div className="bg-white shadow rounded-lg overflow-hidden">
-      <img src="/images/imagen1.jpg" alt="Plato 1" className="w-full h-64 object-cover" />
-    </div>
-    <div className="bg-white shadow rounded-lg overflow-hidden">
-      <img src="/images/imagen2.jpg" alt="Plato 2" className="w-full h-64 object-cover" />
-    </div>
-    <div className="bg-white shadow rounded-lg overflow-hidden">
-      <img src="/images/imagen3.jpg" alt="Plato 3" className="w-full h-64 object-cover" />
-    </div>
-  </div>
-</section>
-
-
-      {/* Formulario de reservas */}
-      <section className="flex justify-center my-16 px-4">
-        <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-lg">
-          <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">
-            Haz tu reserva
-          </h2>
-          <ReservaForm />
+      <section
+        id="inicio"
+        className="h-[80vh] bg-cover bg-center flex items-center justify-center text-white mt-16"
+        style={{
+          backgroundImage: "url('/images/hero.jpg')", // ponés tu imagen en public/images
+        }}
+      >
+        <div className="bg-black/50 p-8 rounded-2xl text-center">
+          <h1 className="text-5xl font-extrabold mb-4">Bienvenido a Viti Bar</h1>
+          <p className="text-xl">Donde el vino, la buena comida y la compañía se encuentran</p>
         </div>
       </section>
 
-      {/* Botón WhatsApp */}
+      {/* Quiénes somos */}
+      <section id="acerca" className="py-16 px-6 bg-white text-center">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-4xl font-semibold mb-6 text-gray-800">Quiénes somos</h2>
+          <p className="text-lg leading-relaxed text-gray-600">
+            En Viti Bar contamos con décadas de pasión por el vino. Nuestro objetivo
+            es ofrecer experiencias inolvidables, sabores auténticos y un ambiente
+            acogedor. Desde nuestra selección de vinos hasta cada plato, cuidamos cada
+            detalle para que tu visita sea especial.
+          </p>
+        </div>
+      </section>
+
+      {/* Galería */}
+      <section id="galeria" className="py-16 px-6 bg-gray-100 text-center">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-semibold mb-8 text-gray-800">Galería</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <img src="/images/imagen1.jpg" alt="Foto 1" className="rounded-lg shadow-lg object-cover h-64 w-full" />
+            <img src="/images/imagen2.jpg" alt="Foto 2" className="rounded-lg shadow-lg object-cover h-64 w-full" />
+            <img src="/images/imagen3.jpg" alt="Foto 3" className="rounded-lg shadow-lg object-cover h-64 w-full" />
+          </div>
+        </div>
+      </section>
+
+      {/* Reservas */}
+      <section id="reservas" className="py-16 px-6 bg-white text-center">
+        <div className="container mx-auto max-w-lg">
+          <h2 className="text-4xl font-semibold mb-6 text-gray-800">Reserva tu mesa</h2>
+          <div className="bg-gray-50 shadow-lg rounded-xl p-8">
+            <ReservaForm />
+          </div>
+        </div>
+      </section>
+
+      {/* Contacto */}
+      <section id="contacto" className="py-16 px-6 bg-gray-100 text-center">
+        <div className="container mx-auto max-w-2xl">
+          <h2 className="text-4xl font-semibold mb-6 text-gray-800">Contacto</h2>
+          <p className="text-lg text-gray-600">Bulevar 26 de Marzo 3586, Montevideo, Uruguay</p>
+          <p className="text-lg text-gray-600">Tel: 2622 1232</p>
+          <p className="text-lg text-gray-600">Correo: contacto@vitibar.com.uy</p>
+        </div>
+      </section>
+
+      {/* WhatsApp flotante */}
       <div className="fixed bottom-6 right-6">
         <a
           href="https://wa.me/59899781948"
@@ -74,6 +95,7 @@ function App() {
       <footer className="bg-white text-gray-600 p-6 text-center border-t">
         © 2025 Viti Bar - Todos los derechos reservados
       </footer>
+
     </div>
   );
 }
