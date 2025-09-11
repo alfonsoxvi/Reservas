@@ -25,7 +25,7 @@ function App() {
         id="inicio"
         className="h-[80vh] bg-cover bg-center flex items-center justify-center text-white mt-16"
         style={{
-          backgroundImage: "url('/images/hero.jpg')", // ponés tu imagen en public/images
+          backgroundImage: "url('/images/viti5.jpg')", // ponés tu imagen en public/images
         }}
       >
         <div className="bg-black/50 p-8 rounded-2xl text-center">
